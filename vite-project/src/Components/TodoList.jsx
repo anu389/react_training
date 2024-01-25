@@ -1,8 +1,8 @@
 import React from "react";
-import TodoItem1 from "./TodoItem1";
-import TodoItem2 from "./TodoItem2";
+import TodoItem from "./TodoItem";
 
-export default function TodoList() {
+
+export default function TodoList({todolist}) {
   return (
     <div className="container mt-2">
       <table class="table">
@@ -14,8 +14,12 @@ export default function TodoList() {
           </tr>
         </thead>
         <tbody>
-            <TodoItem1/>
-            <TodoItem2/>
+            {todolist.map((item,index)=>{
+              return <TodoItem todo={item} indx ={index}/>
+            })}
+
+            {/* <TodoItem/> */}
+            
         </tbody>
       </table>
     </div>
