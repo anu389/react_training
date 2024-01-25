@@ -11,7 +11,6 @@ export default function App() {
     <Title/>
     <AddToDo/>
     <TodoList/>
-    
   </center>
   </div>
   </>
