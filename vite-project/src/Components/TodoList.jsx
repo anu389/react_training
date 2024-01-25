@@ -3,8 +3,12 @@ import TodoItem from "./TodoItem";
 
 
 export default function TodoList({todolist}) {
-  return (
-    <div className="container mt-2">
+  if(todolist.length===0){
+    return <h1>No tasks!</h1>
+  }else{
+
+    return (
+      <div className="container mt-2">
       <table class="table">
         <thead>
           <tr>
@@ -24,4 +28,6 @@ export default function TodoList({todolist}) {
       </table>
     </div>
   );
+}
+
 }

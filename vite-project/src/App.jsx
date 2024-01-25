@@ -7,7 +7,7 @@ export default function App() {
   const todolist=[{name:"Computer",
                    desc:"It is an electronic device"},
                   {name:"Software",
-                  desc:"Sosftware is a set of instructions"}]
+                  desc:"Software is a set of instructions"}]
   return(
   <>
   <div className="container shadow p-3 mb-5 bg-body-tertiary rounded">
